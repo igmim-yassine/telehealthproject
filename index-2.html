@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Find easily a doctor and book online an appointment">
+	<meta name="author" content="Ansonika">
+	<title>Allo Docteur</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="{% static 'home/img/favicon.ico' %}" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="{% static 'home/img/apple-touch-icon-57x57-precomposed.png' %}">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="{% static 'home/img/apple-touch-icon-72x72-precomposed.png' %}">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="{% static 'home/img/apple-touch-icon-114x114-precomposed.png' %}">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{% static 'home/img/apple-touch-icon-144x144-precomposed.png' %}">
+
+	<!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="{% static 'home/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'home/css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'home/css/menu.css' %}" rel="stylesheet">
+	<link href="{% static 'home/css/vendors.css' %}" rel="stylesheet">
+	<link href="{% static 'home/css/icon_fonts/css/all_icons_min.css' %}" rel="stylesheet">
+    
+	<!-- YOUR CUSTOM CSS -->
+	<link href="{% static 'home/css/custom.css" rel="stylesheet">
+	
+	<!-- Modernizr -->
+	<script src="{% static 'home/js/modernizr.js' %}"></script>
+
+</head>
+
+<body>
+
+	<div id="preloader" class="Fixed">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- /Preload-->
+	
+	<div id="page">		
+	<header class="header_sticky">	
+		<a href="#menu" class="btn_mobile">
+			<div class="hamburger hamburger--spin" id="hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+		</a>
+		<!-- /btn_mobile-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<div id="logo_home">
+						<h1><a href="index.html" title="Findoctor">AlloDoc</a></h1>
+					</div>
+				</div>
+				<div class="col-lg-9 col-6">
+					<ul id="top_access">
+						<li><a href="login.html"><i class="pe-7s-user"></i></a></li>
+						<li><a href="register-doctor.html"><i class="pe-7s-add-user"></i></a></li>
+					</ul>
+					<nav id="menu" class="main-menu">
+						<ul>
+							<li>
+								<span><a href="#0">Accueil</a></span>
+							</li>
+							<li>
+								<span><a href="#0">A propos</a></span>
+								
+							</li>
+
+						</ul>
+					</nav>
+					<!-- /main-menu -->
+				</div>
+			</div>
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /header -->	
+	
+	<main>
+		<div class="header-video">
+			<div id="hero_video">
+				<div class="content">
+					<h3>Rejoindre la révolution médicale</h3>
+					<p>consultez votre médecin 7J/7 24H/24 et partout au maroc</p>
+				</div> 
+			</div>
+			<img src="{% static 'home/img/video_fix.png' %}" alt="" class="header-video--media" data-video-src="{% static 'home/video/intro'%}" data-teaser-source="{% static 'home/video/intro'%}" data-provider="" data-video-width="1920" data-video-height="750">
+		</div>
+		<!-- /Header video -->
+	
+
+
+		<!-- /white_bg -->		
+		
+		<div class="container margin_120_95">
+			<div class="main_title">
+				<h2>consultez votre médecin favori de <strong> chez vous</strong> </h2>
+				<p> AlloDocteur vous permet de consulter votre médecin en ligne sans file d'attente ni déplacement</p>
+			</div>
+			<div class="row add_bottom_30">
+				<div class="col-lg-4">
+					<div class="box_feat" id="icon_1">
+						<span></span>
+						<h3>Rechercher un médecin</h3>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="box_feat" id="icon_3">
+						<span></span>
+						<h3>Prendre un rendez-vous</h3>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="box_feat" id="icon_2">
+						<h3>Effectuer la consultation en ligne</h3>
+					</div>
+				</div>
+			</div>
+			<!-- /row -->
+			<p class="text-center"><a href="list.html" class="btn_1 medium">Find Doctor</a></p>
+		</div>
+		<!-- /container -->
+	</main>
+	<!-- /main content -->
+	
+	<footer>
+		<div class="container margin_60_30">
+			<div class="row">
+				<div class="col-sm-0 col-md-5">
+					<p>
+						<a href="index.html" title="Findoctor">
+							<img src="{% static 'home/img/logo.png' %}" data-retina="true" alt="" width="163" height="36" class="img-fluid">
+						</a>
+					</p>
+				</div>
+
+			<!--/row-->
+			<hr>
+			<div class="row">
+				<div class="col-sm-10">
+					<ul id="additional_links">
+						<li><a href="#0">Terms and conditions</a></li>
+						<li><a href="#0">Privacy</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<div id="copy">© 2019 ALLODOCTEUR </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</footer>
+	<!--/footer-->
+	</div>
+	<!-- page -->
+
+	<div id="toTop"></div>
+	<!-- Back to top button -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="{% static 'home/js/jquery-2.2.4.min.js' %}"></script>
+	<script src="{% static 'home/js/common_scripts.min.js' %}"></script>
+	<script src="{% static 'home/js/functions.js' %} "></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="{% static 'home/js/video_header.js' %}"></script>
+	<script>
+		'use strict';
+		HeaderVideo.init({
+			container: $('.header-video'),
+			header: $('.header-video--media'),
+			videoTrigger: $("#video-trigger"),
+			autoPlayVideo: true
+		});
+	</script>
+
+</body>
+
+</html>
